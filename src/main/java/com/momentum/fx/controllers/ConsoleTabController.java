@@ -7,8 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import com.momentum.fx.receiver.DevToolFailureNotificationReceiver;
-import com.momentum.fx.receiver.DevToolSuccessNotificationReceiver;
+import com.momentum.fx.receiver.Near52WeekHighNotificationReceiver;
 import com.momentum.fx.services.MissionsService;
 
 import javafx.collections.FXCollections;
@@ -59,15 +58,12 @@ public class ConsoleTabController {
 			missionInfo = service.getMissionInfo(selectedItem);
 			getLog().appendText("Sucessfully retrieved mission info for " + selectedItem + "\n");
 			// test notification code.
-			DevToolSuccessNotificationReceiver devToolSuccessNotificationReceiver = new DevToolSuccessNotificationReceiver();
+			Near52WeekHighNotificationReceiver devToolSuccessNotificationReceiver = new Near52WeekHighNotificationReceiver();
 			devToolSuccessNotificationReceiver.receiveQueue("Success Notification is working");
-			DevToolFailureNotificationReceiver devToolFailureNotificationReceiver = new DevToolFailureNotificationReceiver();
-			devToolFailureNotificationReceiver.receiveQueue("Failure  Notification is working");
 		} catch (IOException exception) {
 			exception.printStackTrace(stackTraceWriter);
 			getLog().appendText(stackTraceWriter.toString() + "\n");
 		}
-
 		return missionInfo;
 	}
 
