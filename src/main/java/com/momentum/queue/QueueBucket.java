@@ -1,4 +1,4 @@
-package com.devTools.queue;
+package com.momentum.queue;
 
 public interface QueueBucket {
 	String TESTING_QUEUE = "testingQueue";

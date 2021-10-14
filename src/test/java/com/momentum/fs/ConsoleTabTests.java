@@ -1,7 +1,7 @@
-package com.notification.fs;
+package com.momentum.fs;
 
-import com.devTools.fx.Main;
-import com.devTools.fx.services.MissionsService;
+import com.momentum.fx.Main;
+import com.momentum.fx.services.MissionsService;
 
 import java.io.IOException;
 import static org.junit.Assert.*;

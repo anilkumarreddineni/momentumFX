@@ -1,4 +1,4 @@
-package com.devTools.fx;
+package com.momentum.fx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

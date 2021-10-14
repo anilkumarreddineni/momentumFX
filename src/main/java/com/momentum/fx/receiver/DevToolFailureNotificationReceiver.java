@@ -1,10 +1,10 @@
-package com.devTools.fx.receiver;
+package com.momentum.fx.receiver;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
-import com.devTools.fx.receiver.notification.DevToolFailureNotification;
-import com.devTools.queue.QueueBucket;
+import com.momentum.fx.receiver.notification.DevToolFailureNotification;
+import com.momentum.queue.QueueBucket;
 
 import javafx.application.Platform;
 

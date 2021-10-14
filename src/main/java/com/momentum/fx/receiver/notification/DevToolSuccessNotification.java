@@ -1,4 +1,4 @@
-package com.devTools.fx.receiver.notification;
+package com.momentum.fx.receiver.notification;
 
 import javafx.scene.paint.Paint;
 import tray.animations.AnimationType;

@@ -1,4 +1,4 @@
-package com.devTools.fx.controllers;
+package com.momentum.fx.controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import com.devTools.fx.receiver.DevToolFailureNotificationReceiver;
-import com.devTools.fx.receiver.DevToolSuccessNotificationReceiver;
-import com.devTools.fx.services.MissionsService;
+import com.momentum.fx.receiver.DevToolFailureNotificationReceiver;
+import com.momentum.fx.receiver.DevToolSuccessNotificationReceiver;
+import com.momentum.fx.services.MissionsService;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
