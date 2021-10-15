@@ -11,7 +11,7 @@ import javafx.application.Platform;
 @Component
 public class Near52WeekHighNotificationReceiver {
 
-	@JmsListener(destination = QueueBucket.DEV_TOOL_BUCKET_SUCCESS)
+	@JmsListener(destination = QueueBucket.NEAR_52_WEEK_HIGH_BUCKET)
 	public void receiveQueue(String message) {
 		System.out.println("Message Received: " + message);
 		Platform.runLater(() -> {
