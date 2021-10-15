@@ -30,3 +30,5 @@ git push -u origin main
 
 install trayTester jar:
 mvn install:install-file -Dfile=lib/trayTester-1.0.jar -DgroupId=tray.notification -DartifactId=trayTester -Dversion=1.0 -Dpackaging=jar
+
+download apache-activemq-5.16.0 and set the environment variable ACTIVE_MQ_HOME

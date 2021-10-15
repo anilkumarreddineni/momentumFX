@@ -1,7 +1,6 @@
 package com.momentum.fx.receiver.notification;
 
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.InputStream;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.Paint;
@@ -12,18 +11,13 @@ public class Near52WeekHighNotification {
 
 	String msg;
 	TrayNotification tray = new TrayNotification();
-	String title = "Near 52 Week High";
-
-	private File getFile() {
-		String fileName = "bull.jpg";
-		ClassLoader classLoader = getClass().getClassLoader();
-		File file = new File(classLoader.getResource(fileName).getFile());
-		return file;
-	}
+	final static String TITLE = "Near 52 Week High";
+	final static String FILENAME = "/bull.jpg";
 
 	public Near52WeekHighNotification(String msg) throws Exception {
-		tray.setTitle(title);
-		Image image = new Image(new FileInputStream(getFile()));
+		tray.setTitle(TITLE);
+		InputStream in = getClass().getResourceAsStream(FILENAME);
+		Image image = new Image(in);
 		tray.setImage(image);
 		tray.setMessage(msg);
 		tray.setRectangleFill(Paint.valueOf("#008000"));
